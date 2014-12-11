@@ -446,19 +446,19 @@ def Animate():
 
 def main():
     print 'Initializing LCD.....',   
-    LCDInit()
-    #try:
-    #    LCDInit()
-    #    try:
-    #        print colored('Done', 'green')
-    #    except NameError:
-    #        print 'Done'
-    #except Exception:
-    #    try:
-    #        print colored('Fail', 'red')
-    #    except NameError:
-    #        print 'Fail'
-    #    sys.exit(0)
+    #LCDInit()
+    try:
+        LCDInit()
+        try:
+            print colored('Done', 'green')
+        except NameError:
+            print 'Done'
+    except Exception:
+        try:
+            print colored('Fail', 'red')
+        except NameError:
+            print 'Fail'
+        sys.exit(0)
     
     print 'Setting contrast.....',   
     try:
@@ -621,13 +621,6 @@ def main():
         sys.exit(0)
                     
     
-    
-    
-
-
-
-
-
 if __name__ == '__main__':
     main()
     
